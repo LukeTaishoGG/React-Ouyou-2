@@ -1,0 +1,25 @@
+.todo-textarea {
+  height: auto;
+  width: 87px;
+  border: none;
+  resize: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.x-button-area {
+  display: flex;
+  justify-content: flex-end;
+}
+.move-button {
+  display: flex;
+  gap: 37px;
+}
+.x-button,
+.l-button,
+.r-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

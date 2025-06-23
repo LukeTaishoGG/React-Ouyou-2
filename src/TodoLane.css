@@ -1,0 +1,44 @@
+.todo-lane {
+  font-size: 14px;
+  width: 166px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.status-name {
+  display: flex;
+  justify-self: center;
+}
+.lists-box {
+  border: 1px solid black;
+  height: 409px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-box {
+  width: 100px;
+  height: 352px;
+  overflow-y: auto;
+  margin: 10px;
+}
+.todo-lists {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.add-button {
+  font-size: 40px;
+  position: absolute;
+  top: 484px;
+  left: 120px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
