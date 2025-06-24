@@ -3,7 +3,7 @@ import './TodoItem.css'
 type Props = {
   todo: Todo
   onUpdate: (id: string, text: string) => void
-  onMove: (id: string, direction: 'left' | 'right') => void // ← 追加
+  onMove: (id: string, direction: 'left' | 'right') => void
   onDelete: (id: string) => void
 }
 const TodoItem = ({ todo, onUpdate, onMove, onDelete }: Props) => {

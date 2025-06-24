@@ -4,7 +4,7 @@ import './TodoLane.css'
 type Props = {
   status: Status
   todos: Todo[]
-  addTodo?: () => void //?があるのは渡す場合も渡さない場合もある。ない場合必ず渡さないとTSが怒る
+  addTodo?: () => void
   onUpdate: (id: string, text: string) => void
   onMove: (id: string, direction: 'left' | 'right') => void
   onDelete: (id: string) => void

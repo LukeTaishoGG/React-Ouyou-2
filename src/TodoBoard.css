@@ -2,7 +2,7 @@
   height: 500px;
   width: 500px;
   display: flex;
-  flex-direction: row; /* 横並びにする（これがデフォルト） */
+  flex-direction: row;
   border: 1px solid black;
 }
 .list {

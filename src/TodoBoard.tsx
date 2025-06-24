@@ -10,7 +10,7 @@ const TodoBoard = () => {
       text: 'やること1',
       status: 'TODO',
     }
-    setTodos([newTodo, ...todos]) //既存のTodoを残すために...でセットする
+    setTodos([newTodo, ...todos])
   }
   const updateTodo = (id: string, text: string) => {
     setTodos((prev) => prev.map((todo) => (todo.id === id ? { ...todo, text } : todo)))
