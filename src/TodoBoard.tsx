@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import TodoLane from './TodoLane'
 import type { Todo, Status } from './TodoType'
-import './TodoBoard.css'
+import './todoBoard.css'
 const TodoBoard = () => {
   const [todos, setTodos] = useState<Todo[]>([])
   const addTodolist = () => {
@@ -20,13 +20,13 @@ const TodoBoard = () => {
       prev.map((todo) => {
         if (todo.id !== id) return todo
         const status_order: Status[] = ['TODO', 'IN_PROGRESS', 'DONE']
-        const current_index = status_order.indexOf(todo.status)
-        const next_index =
+        const currentIndex = status_order.indexOf(todo.status)
+        const nextIndex =
           direction === 'left'
-            ? Math.max(0, current_index - 1)
-            : Math.min(status_order.length - 1, current_index + 1)
-        const new_status: Todo['status'] = status_order[next_index]
-        return { ...todo, status: new_status }
+            ? Math.max(0, currentIndex - 1)
+            : Math.min(status_order.length - 1, currentIndex + 1)
+        const newStatus = status_order[nextIndex]
+        return { ...todo, status: newStatus }
       }),
     )
   }

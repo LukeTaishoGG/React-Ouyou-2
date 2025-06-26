@@ -1,5 +1,5 @@
 import TodoBoard from './TodoBoard'
-import './Layout.css'
+import './layout.css'
 function Layout() {
   return (
     <div className="layout">

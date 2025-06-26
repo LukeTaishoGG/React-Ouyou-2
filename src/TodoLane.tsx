@@ -1,6 +1,6 @@
 import type { Todo, Status } from './TodoType'
 import TodoItem from './TodoItem'
-import './TodoLane.css'
+import './todoLane.css'
 type Props = {
   status: Status
   todos: Todo[]

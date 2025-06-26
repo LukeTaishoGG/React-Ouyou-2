@@ -1,5 +1,5 @@
 import type { Todo } from './TodoType'
-import './TodoItem.css'
+import './todoItem.css'
 type Props = {
   todo: Todo
   onUpdate: (id: string, text: string) => void
